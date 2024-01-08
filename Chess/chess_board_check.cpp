@@ -26,8 +26,8 @@ void solution(int n){
         }   
     }
     // Check for adjacent cells
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < n; j++){
+    for(int i = 0; i<n; i++){
+        for(int j=0; j<n; j++){
             // Check adjacent cells: up, down, left, right
             if (i > 0 && chess_board[i][j] == chess_board[i-1][j]){
                 cout<<"Not valid"<<nl;
@@ -38,11 +38,11 @@ void solution(int n){
                 return;
             }
             if (j > 0 && chess_board[i][j] == chess_board[i][j-1]){
-                cout << "Not valid" << nl;
+                cout<<"Not valid"<<nl;
                 return;
             }
             if (j < n-1 && chess_board[i][j] == chess_board[i][j+1]){
-                cout << "Not valid" << nl;
+                cout<<"Not valid"<<nl;
                 return;
             }
         }
