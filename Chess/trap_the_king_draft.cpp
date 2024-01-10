@@ -83,7 +83,6 @@ void trapKing(vector<vector<char>>& board, int king_row, int king_col) {
     }
 
     // For all light Green colored Squares
-    // You need to replace 'a' with 'king_row' and 'b' with 'king_col' in the conditions
     else if (king_row == 2 || king_row == 7 || king_col == 2 || king_col == 7) {
         if (king_row == 2) {
             board[king_row - 1][king_col + 2] = 'Q';
