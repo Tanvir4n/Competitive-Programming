@@ -52,12 +52,12 @@ void solution(int n){
 }
 
 signed main(){
-    
-    int n;
-    cin>>n;
-
+   
     ISO();
  
+    int n;
+    cin>>n;
     solution(n);
+ 
     return 0;
 }
