@@ -10,10 +10,9 @@ int main(){
 	while(t--){
 	    int n,k;
 	    cin>>n>>k;
-
 	    vector<int>v(n);
 	    for(int i=0; i<n; i++){
-	        cin>>v[i];
+	    cin>>v[i];
 	}
 	sort(v.begin(), v.end());
 	
@@ -27,28 +26,12 @@ int main(){
 	    for(int i=0; i<k; i++){
 	        son += v[i];
 	    }
-	    int first=(son-chef);
-
-        chef=0;
-        son=0;
-
-    for(int i=0;i<k;i++){
-        son += v[i];
+	    int max_diff=chef-son;
+    
+        ans.push_back(max_diff);
     }
-    for(int i=k;i<n;i++){
-        chef += v[i];
+    for(int TK : ans){
+        cout<<TK<<endl;
     }
     
-    int second=abs(son-chef);
-
-    cout<<max(first, second)<<endl;
-    
-    //ans.push_back(max_diff);
-    }
-    // for(int TK : ans){
-    //     cout<<TK<<endl;
-    // }
-    
-
-	return 0;
 }
